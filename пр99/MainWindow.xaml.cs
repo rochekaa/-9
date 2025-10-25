@@ -39,9 +39,7 @@ namespace np9
             try
             {
                 var Читатель = new System.IO.StreamReader(
-                    openFileDialog1.FileName, Encoding.GetEncoding(1251));
-                textBox1.Text = Читатель.ReadToEnd();
-                Читатель.Close();
+
             }
             catch (System.IO.FileNotFoundException Ситуация)
             {
@@ -68,9 +66,7 @@ namespace np9
                 try
                 {
                     var Писатель = new System.IO.StreamWriter(
-                        saveFileDialog1.FileName, false,
-                        System.Text.Encoding.GetEncoding(1251));
-                    Писатель.Write(textBox1.Text);
+
                     Писатель.Close();
                 }
                 catch (Exception Ситуация)
